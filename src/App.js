@@ -1,18 +1,32 @@
 import React from "react";
+import List from "./components/List";
 import listSvg from './assets/img/list.svg'
 
 function App() {
   return (
     <div className="todo">
       <div className="todo__sidebar">
-        <ul className="todo__list">
-          <li>
-            <i>
-              <img src={listSvg} alt="иконка списка"/>
-            </i>
-            <span>Все задачи</span>
-          </li>
-        </ul>
+        <List items={[
+          {
+            icon: listSvg,
+            name: 'Все задачи',
+            active: true,
+          }
+        ]} />
+        <List items={[
+          {
+            color: 'green',
+            name: 'Покупки'
+          },
+          {
+            color: 'blue',
+            name: 'Фронтенд'
+          },
+          {
+            color: 'pink',
+            name: 'Фильмы и сериалы'
+          },
+        ]}/>
       </div>
       <div className="todo__tasks"></div>
     </div>

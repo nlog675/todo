@@ -27,21 +27,4 @@
     border-right: 1px solid #f1f1f1;
     padding: 60px 20px;
   }
-
-  &__list {
-    li {
-      display: flex;
-      align-items: center;
-    }
-
-    i {
-      margin-right: 10px;
-
-      img {
-        opacity: .6;
-      }
-    }
-  }
 }
-
-
