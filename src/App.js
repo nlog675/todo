@@ -2,6 +2,7 @@ import React from 'react';
 import List from './components/List';
 import listSvg from './assets/img/list.svg';
 import plusSvg from './assets/img/add.svg';
+import AddButtonList from './components/AddButtonList';
 
 function App() {
   return (
@@ -34,15 +35,8 @@ function App() {
           ]}
           isRemovable
         />
-        <List
-          items={[
-            {
-              className: 'list__add-button',
-              icon: plusSvg,
-              name: 'Добавить список',
-            },
-          ]}
-        />
+        <AddButtonList />
+        
       </div>
       <div className="todo__tasks"></div>
     </div>
